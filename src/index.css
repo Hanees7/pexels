@@ -1,6 +1,6 @@
 body {
-  background-color: rgb(126, 120, 120);
-  color: black;
+  background-color: black;
+  color: white;
 }
 /* For remove the scroll bar */
 body::-webkit-scrollbar {
