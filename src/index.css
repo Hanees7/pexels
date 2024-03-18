@@ -1,0 +1,47 @@
+body {
+  background-color: rgb(126, 120, 120);
+  color: black;
+}
+/* For remove the scroll bar */
+body::-webkit-scrollbar {
+  display: none;
+}
+.itemss {
+  padding: 3rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 10px;
+}
+.itemss .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  /* width: 100%; */
+  height: auto;
+}
+/* Transition use in the before hover */
+.itemss .items img {
+  /* aspect-ratio:3/2 ; */
+  width: 400px;
+  height: 350px;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+/* Transform use at the time of hover */
+.itemss .items img:hover {
+  transform: scale(1.1);
+  border: 2px solid yellowgreen;
+}
+.imggg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.imggg img {
+  width: 400px;
+}
